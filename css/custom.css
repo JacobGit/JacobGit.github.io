@@ -159,6 +159,11 @@ ul.nav {
   padding-bottom:30px;
 }
 
+.col-md-3 {
+  padding-left:10px;
+  padding-right:10px;
+}
+
 .stats {
   color: #b31b1b;
   font-size:55px;
