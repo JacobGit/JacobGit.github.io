@@ -21,10 +21,6 @@
     <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -178,6 +174,33 @@
     </div>
 
 
+    <div id="progress">
+      <div class="container homepage">
+        <h2>Progress</h2>
+        <hr>
+        <div class="row">
+          <div class="col-md-8">
+          <div class="chart-horiz">
+            <ul class="chart">
+              <li class="title" title="Senior Class Campaign Participation"></li>
+              <li title="ILR"><span class="bar" data-number="8"></span><span class="number">8%</span></li>
+              <li class="hotelBar" title="Hotel"><span class="bar" data-number="5"></span><span class="number">5%</span></li>
+              <li title="CALS"><span class="bar" data-number="5"></span><span class="number">5%</span></li>
+              <li title="A&amp;S"><span class="bar" data-number="5"></span><span class="number">5%</span></li>
+              <li title="HumEc"><span class="bar" data-number="4"></span><span class="number">4%</span></li>
+              <li title="AAP"><span class="bar" data-number="3"></span><span class="number">3%</span></li>
+              <li title="Engineering"><span class="bar" data-number="3"></span><span class="number">3%</span></li>
+            </ul>
+          </div>
+          </div>
+          <div class="col-md-4">
+            <p id="progressStats"><span class="stats">10</span> <br>People Have Taken the Challenge</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <footer>
       <div class="container">
         <div class="row">
@@ -198,8 +221,13 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery.horizBarChart.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/noframework.waypoints.min.js"></script>
+
+
+    <!-- Javascript for slow scrolling -->
     <script>
       $(function() {
       $('a[href*=#]:not([href=#])').click(function() {
@@ -216,6 +244,24 @@
       });
     });
   </script>
+
+
+    <!-- Starting animation only when we get to "progress" div -->
+    <script>
+    var waypoint = new Waypoint({
+    element: document.getElementById('progress'),
+    offset: 410,
+    handler: function() {
+      console.log("hello");
+      $('.chart').horizBarChart({
+          selector: '.bar',
+          speed: 3000,
+        });
+      waypoint.destroy();
+    }
+    })
+    </script>
+
 
   </body>
 </html>

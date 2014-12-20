@@ -118,7 +118,7 @@ ul.nav {
 }
 
 .homepage {
-	text-align: center;
+  text-align:center;
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
@@ -232,7 +232,123 @@ ul.nav {
   padding-top:20px;
 }
 
-/* Responsive Design */
+#progressStats {
+  padding-top:2em;
+  font-size:26px;
+}
+
+/* Old Chart Styling
+
+.chart { 
+  width: 90% 
+}
+ 
+.chart li {
+  display: block;
+  height: 23px;
+  margin-top: 3px;
+  position: relative;
+  text-align:left;
+}
+ 
+.chart li:before {
+  color: #fff;
+  content: attr(title);
+  left: 5px;
+  position: absolute;
+}
+
+.chart li.title:before {
+  color: black;
+  font-weight: bold;
+  left: 0;
+}
+ 
+.chart li:first-child { 
+  margin-top: 0;
+}
+
+.chart li .bar {
+  background: #27ae60;
+  height: 100%;
+  min-width: 164px;
+}
+ 
+.chart li .number {
+  color: #27ae60;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 5px;
+  position: absolute;
+  top: -3px
+}
+ 
+.chart li.past .bar { 
+  background: #2ecc71 
+}
+ 
+.chart li.past .number { 
+ color: #2ecc71
+}
+*/
+.chart-horiz .chart {
+  width:90%; 
+  text-align:left;
+  font-family: 'Old Standard TT', serif;;
+}
+.chart-horiz .chart li {
+  display:block;
+  height:30px;
+  margin-top:3px;
+  position:relative
+}
+.chart-horiz .chart li:before {
+  color:white;
+  content:attr(title);
+  left:5px;
+  position:absolute;
+  font-size:22px;
+  font-weight:bold;
+}
+.chart-horiz .chart li.title:before {
+  color: #353839;
+  font-weight: bold;
+  left: 0px;
+  font-size: 32px;
+  bottom: 4px;
+  font-family: 'Oswald', sans-serif;
+}
+.chart-horiz .chart li:first-child {
+  margin-top:0;
+}
+.chart-horiz .chart li .bar {
+  background: #727272;
+  height:100%;
+  min-width:164px;
+}
+.chart-horiz .chart li .number {
+  color:#727272;
+  font-size:20px;
+  font-weight:bold;
+  padding-left:5px;
+  position:absolute;
+  top:0px;
+  left:inherit !important;
+}
+.chart-horiz .chart li.hotelBar .bar{
+  background:#b31b1b;
+}
+.chart-horiz .chart li.hotelBar .number{
+  color:#b31b1b;
+}
+
+
+
+
+
+
+
+/* Responsive Tweaks */
 
 @media screen and (min-width: 768px) {
   .jumbotron {
