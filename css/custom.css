@@ -377,8 +377,13 @@ ul.nav {
 }
 
 @media (max-width: 767px) {
+
+  .jumbotron {
+    background: #b31b1b;
+  }
+
   .jumbotron h1 {
-    font-size: 24px;
+    font-size: 45px;
   }
   .jumbotron p {
     font-size: 16px;
@@ -392,6 +397,10 @@ ul.nav {
   }
   footer img {
     width: 80%;
+  }
+
+  .fa-5x {
+    font-size: 3em;
   }
 }
 
