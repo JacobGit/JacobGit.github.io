@@ -430,6 +430,10 @@ ul.nav {
   .socialMediaIcons {
     text-align:center;
   }
+
+  .homepage h2 {
+    font-size: 34px;
+  }
 }
 
 
