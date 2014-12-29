@@ -436,6 +436,11 @@ ul.nav {
   .homepage h2 {
     font-size: 34px;
   }
+
+  #challenge img, #about img {
+    width:280px;
+    height:180px;
+  }
 }
 
 
