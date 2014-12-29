@@ -377,9 +377,14 @@ ul.nav {
 }
 
 @media (max-width: 767px) {
+  
+  .navbar-brand img {
+    padding-left:10px;
+  }
 
   .jumbotron {
     background: #b31b1b;
+    height: 280px;
   }
 
   .jumbotron h1 {
@@ -400,7 +405,30 @@ ul.nav {
   }
 
   .fa-5x {
-    font-size: 3em;
+    visibility: hidden;
+  }
+
+  .homepage p, ul {
+    padding-top: 10px;
+    padding-bottom:25px;
+    font-size: 1.3em !important;
+  }
+
+  #get-involved .col-md-3 {
+    padding-bottom:50px;
+  }
+
+  .chart-horiz .chart li.title:before {
+    font-size:20px;
+  }
+
+  footer h1 {
+    font-size: 24px;
+    text-align:center;
+  }
+
+  .socialMediaIcons {
+    text-align:center;
   }
 }
 
