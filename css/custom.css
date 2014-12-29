@@ -380,6 +380,9 @@ ul.nav {
   
   .navbar-brand img {
     padding-left:10px;
+    width:240px;
+    height:55px;
+    padding-top:5px;
   }
 
   .jumbotron {
@@ -399,9 +402,6 @@ ul.nav {
   }
   .homepage p {
     font-size: 18px;
-  }
-  footer img {
-    width: 80%;
   }
 
   .fa-5x {
