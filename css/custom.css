@@ -18,6 +18,7 @@ p {
   height:100%;
   margin-bottom:0px;
 }
+
 .jumbotron h1 {
   line-height: .9em;
   font-family: 'Old Standard TT', serif;
@@ -413,7 +414,7 @@ ul.nav {
   .homepage p, ul {
     padding-top: 10px;
     padding-bottom:25px;
-    font-size: 1.3em !important;
+    font-size: 1.8em !important;
   }
 
   #get-involved .col-md-3 {
@@ -440,6 +441,10 @@ ul.nav {
   #challenge img, #about img {
     width:280px;
     height:190px;
+  }
+
+  .chart-horiz .chart {
+    -webkit-padding-start:10px;
   }
 }
 
