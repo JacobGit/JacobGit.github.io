@@ -20,7 +20,7 @@ p {
 }
 
 .jumbotron h1 {
-  line-height: .9em;
+  line-height: 1.1em;
   font-family: 'Old Standard TT', serif;
   color: white;
   /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
@@ -50,7 +50,7 @@ p {
     -2px -1px 0 #000;*/
   margin-top:10px;
   margin-bottom:10px;
-  font-size: 11em;
+  font-size: 10em;
 }
 
 .fa-5x {
