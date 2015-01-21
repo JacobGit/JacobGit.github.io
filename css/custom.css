@@ -80,6 +80,10 @@ p {
   height:100%;
 }
 
+.affix,.navbar-fixed-top{
+  -webkit-transform: scale3d(1,1,1);
+}
+
 footer {
 	  background-color: #b31b1b;
   	padding-top: 15px;
