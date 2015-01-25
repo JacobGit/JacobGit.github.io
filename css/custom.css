@@ -76,10 +76,6 @@ p {
   height:70px;
 }
 
-.navbar-brand img{
-  height:100%;
-}
-
 .affix,.navbar-fixed-top{
   -webkit-transform: scale3d(1,1,1);
 }
