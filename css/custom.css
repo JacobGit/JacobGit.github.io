@@ -76,6 +76,12 @@ p {
   height:70px;
 }
 
+.navbar-brand img {
+  -ms-interpolation-mode: bicubic;
+}
+
+}
+
 .affix,.navbar-fixed-top{
   -webkit-transform: scale3d(1,1,1);
 }
