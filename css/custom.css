@@ -76,8 +76,10 @@ p {
   height:70px;
 }
 
-.navbar-brand img{
-  height:100%;
+.navbar-brand img {
+  -ms-interpolation-mode: bicubic;
+}
+
 }
 
 .affix,.navbar-fixed-top{
@@ -148,6 +150,7 @@ ul.nav {
 
 .homepage a {
 	color: #b31b1b;
+  text-decoration:underline;
 }
 
 .homepage a:hover {
@@ -186,7 +189,7 @@ ul.nav {
   padding-bottom:40px;
 }
 
-#specialText {
+.specialText {
   color: #b31b1b;
 }
 
